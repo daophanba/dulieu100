@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+</head>
+<body>
+	<h1>nhap lieu</h1>
+	nhap so 1<input type = "number" id = "so1">
+	<br>
+	<br>
+	nhap so 2<input type = "number" id = "so2">
+	<br> <br>
+	phep tinh 
+	<select id="pheptinh">
+		<option>+</option>
+		<option>-</option>
+		<option>*</option>
+		<option>/<option>
+	</select>
+	<br> <br>
+	xuat ra <input type="text" id = "xuatra" >
+	<button onclick="myfunction()"> ketqua </button>
+	<script >
+		function myfunction(){
+			var so1 = document.getElementById("so1").value;
+			var so2 = document.getElementById("so2").value;
+			var pheptinh = document.getElementById('pheptinh').value;
+			var xuatra = 0;
+			if(pheptinh == "+"){
+				xuatra = parseInt(so1) + parseInt(so2);
+			}else if(pheptinh == "-"){
+				xuatra = parseInt(so1) - parseInt(so2);
+			}else if(pheptinh == "*"){
+				xuatra = parseInt(so1) * parseInt(so2);
+			}else if(pheptinh == "/"){
+				if (so2 ==0){alert("khong the chia cho 0");}
+				else{
+				xuatra = parseInt(so1) / parseInt(so2);}
+			}
+			document.getElementById("xuatra").value = xuatra;
+		}
+	</script>
+</body>
+</html>

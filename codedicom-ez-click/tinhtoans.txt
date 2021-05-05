@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+	.grida
+	{
+	display: grid;
+        grid-template-columns: 4% 6% 90%;
+	}
+	main{
+    	
+        text-align: center;
+	height:1000px;
+	width:1000px;
+	
+    	}
+	.the1{
+	background-color:red;
+	height:200px;
+	width:200px;
+	
+	}
+	.the2{
+	background-color: yellow;
+	height:200px;
+	width:200px;
+	
+	}
+	table, th, td {
+		padding: 15px;
+	}
+	.button2 {
+		background-color: #18C7F2;
+		font-size: 20px;
+		text-align: center;
+		color:white;
+		width: 200px;height:40px;
+		  border: none;
+		  border-color: #18C7F2;
+		 border-radius: 8px;
+		}
+		.matkhau {height:40px;font-size:75%;width: 200px;
+		border-radius: 8px;border: 1px solid ;  border-color:#9EC2EC;
+		}
+		.dangnhap
+		{
+		width: 200px;height:40px;font-size:75%;border-radius: 8px;border: 1px solid;border-color:#9EC2EC;
+		}
+		
+    </style>
+	</head>
+	<body>
+		<table width="250" height="200" cellpadding="5" style="background-color :#F0F2F5;">
+			<tr>
+				<td>
+					<input type="text" placeholder="Email ho?c s? di?n tho?i" name="name" class="dangnhap"> </td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" placeholder="M?t kh?u" name="matkhau" class="matkhau"> </td>
+					</tr>
+					<tr>
+						<td>
+							<button name="button" type="button" class="button2">Ðang nh?p</button>
+						</td>
+					</tr>
+				</table>
+			</body>
+		</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+	.grida
+	{
+	display: grid;
+        grid-template-columns: 4% 6% 90%;
+	}
+	 .grid-itema{ height:60px;}
+    .item-1a { background-color:black; border-right:1px solid #555;}
+    .item-2a { background-color:black; }
+    .item-3a { background-color:black; }
+	.gridb
+	{
+	display: grid;
+        grid-template-columns: 4% 96%;
+	}
+	 .grid-itemb{ height:50px;}
+    .item-1b { background-color:black; border-right:1px solid #555;}
+    .item-2b { background-color:black; }
+ 
+  
+	
+	 
+    .item-1c { background-color:black; border-right:1px solid #555;}
+    .item-2c { background-color:black; }
+    .item-3c { background-color:black; }
+    .item-4c { background-color:black; }
+    .item-5c { background-color:black; }
+   
+	.gridd
+	{
+	display: grid;
+        grid-template-columns: 50px auto 350px 350px auto;
+        grid-template-rows:200px 200px 200px;
+	}
+	 .grid-itemd{ }
+    .item-1d { background-color:black; border-right:1px solid #555;}
+    .item-2d { background-color:black; }
+    .item-3d { background-color:black; }
+    .item-4d { background-color:black; }
+    .item-5d { background-color:black; }
+    .item-6d { background-color:black;border-right:1px solid #555;  }
+    .item-7d { background-color:black; }
+    .item-8d { background-color:black; }
+    .item-9d { background-color:black; }
+    .item-0d { background-color:black; }
+  
+    </style>
+</head> 
+  
+<body>
+	
+
+	<div class="grida">
+    		<div class="grid-item1 item-1a"><img src="2b.jpg"/> </div>
+    		<div class="grid-item1 item-2a"><img src="1a.jpg"/> </div>
+    		<div class="grid-item1 item-3a"></div>
+	</div>
+	<div class="gridb">
+    		<div class="grid-itemb item-1b"><img src="3c.jpg"/></div>
+    		<div class="grid-itemb item-2b"></div>
+    		
+	</div>
+	
+	<div class="gridd">
+
+		<div class="grid-itemd item-1c"></div>
+    		<div class="grid-itemd item-2c"></div>
+    		<div class="grid-itemd item-3c"></div>
+		<div class="grid-itemd item-4c">
+		<p style="color:white;font-size:150%;text-align:left;">
+			I'm a Paris based <br>
+			independent Digital Designer.</p>
+		<p style="color:white;font-size:75%;text-align:left;">
+			Whith a focus an modem communication we<br>
+			maintain a constant dialogue with our clients to<br>
+			produce intelligent designs that create<br>
+			emotional bonds with their target markets.
+			</p>			
+
+		</div>
+		<div class="grid-itemd item-5c"></div>
+    		
+    		<div class="grid-itemd item-1d"></div>
+    		<div class="grid-itemd item-2d"></div>
+    		<div class="grid-itemd item-3d"><img src="4d.jpg"/></div>
+		<div class="grid-itemd item-4d"><img src="5e.jpg"/></div>
+    		<div class="grid-itemd item-5d"></div>
+    		<div class="grid-itemd item-6d"></div>
+		<div class="grid-itemd item-7d"></div>
+		<div class="grid-itemd item-8d"><img src="6i.jpg"/></div>
+    		<div class="grid-itemd item-9d"><img src="7k.jpg"/></div>
+    		<div class="grid-itemd item-0d"></div>
+	
+	</div>
+
+</body>
+  
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+	.grida
+	{
+	display: grid;
+        grid-template-columns: 4% 6% 90%;
+	}
+	main{
+    	
+        text-align: center;
+	height:1000px;
+	width:1000px;
+	
+    	}
+	.the1{
+	background-color:red;
+	height:200px;
+	width:200px;
+	
+	}
+	.the2{
+	background-color: yellow;
+	height:200px;
+	width:200px;
+	
+	}
+	table, th, td {
+		padding: 15px;
+	}
+	.button2 {
+		background-color: #18C7F2;
+		font-size: 20px;
+		text-align: center;
+		color:white;
+		width: 200px;height:40px;
+		  border: none;
+		  border-color: #18C7F2;
+		 border-radius: 8px;
+		}
+		#so1 {height:40px;font-size:75%;width: 200px;
+		border-radius: 8px;border: 1px solid ;  border-color:#9EC2EC;
+		}
+		#so2
+		{
+		width: 200px;height:40px;font-size:75%;border-radius: 8px;border: 1px solid;border-color:#9EC2EC;
+		}
+		#ketqua
+		{ margin:20px;
+		  padding:30px;
+		  background:#9B070A;
+		}
+    </style>
+	</head>
+	<body>
+		<form name = tinhtoan>
+		<table width="300" height="300" cellpadding="5" style="background-color :#F0F2F5;">
+			    <tr> 
+				<td>
+					<input type="number" placeholder="so 1" name="so1" id="so1"  > </td>
+				</tr>
+				<tr>
+					<td>
+						<input type="number" placeholder="so 2" name="so2" id="so2"> </td>
+				</tr>
+				<tr> <td> <input type="button" value = "+" onClick ="tong() "  />
+				<input type="button" value = "-" onClick ="tru() "  />
+				<input type="button" value = "*" onClick ="nhan() " />
+				<input type="button" value = "/" onClick ="chia() " /> </td> </tr>
+				
+				
+				
+
+					<tr>
+						<td>
+							
+							<button onclick="a()">tinh toán</button>
+						</td>
+					</tr>
+					
+				</table>
+				
+				<p id ="ketqua"> </p>
+				<script>
+					
+					function tong()
+					{
+					 var so1 = document.getElementsById("so1")[0].value;
+					 var so2 = document.getElementsById("so2")[0].value;
+					 var c = parseInt(so1) + parseInt(so2);
+					 document.getElementsById("ketqua").value = c;
+					 
+					}
+					function hieu()
+					{
+					 var so1 = document.getElementsById("so1")[0].value;
+					 var so2 = document.getElementsById("so2")[0].value;
+					 var c = parseInt(so1) - parseInt(so2);
+					 document.getElementsById("ketqua").innerHTML = c;
+					}
+					function nhan()
+					{
+					 var so1 = document.getElementsById("so1")[0].value;
+					 var so2 = document.getElementsById("so2")[0].value;
+					 var c = parseInt(so1) * parseInt(so2);
+					 document.getElementsById("ketqua").innerHTML = c;
+					}
+					function chia()
+					{
+					 var so1 = document.getElementsById("so1")[0].value;
+					 var so2 = document.getElementsById("so2")[0].value;
+					 var c = parseInt(so1) / parseInt(so2);
+					 document.getElementsById("ketqua").innerHTML = c;
+					}
+					
+					
+					
+				</script>
+				
+}
+			</body>
+		</html>

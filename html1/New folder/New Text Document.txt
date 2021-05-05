@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<stype>
+	ul li {
+	list-style:none;
+	cursor:pointer;
+	}
+	</stype>
+ </head>
+ <body>
+	<ul class="tabs">
+		<li>Menu 1 </li>
+		<li>Menu 2</li>
+		<li>Menu 3</li>
+	</ul>
+	
+	<div class="tabsct">
+		<div class="tab"><h1>Test 1</h1>this is content 1</div>
+		<div class="tab"><h1>Test 2</h1>this is content 2</div>
+	<div class="tab"><h1>Test 3</h1>this is content 3</div>
+
+</body>
+<script>
+	jQuery().ready(function(){
+  
+		jQuery('.tab').hide();
+  
+		jQuery('ul.tabs li').click(function(){
+		jQuery('.tab').hide();
+		jQuery(jQuery('.tab')[jQuery(this).index()]).show();
+		}).first().trigger('click');
+  
+	});
+	</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   .menu ul {
+		background: #1F568B;
+		list-style-type: none;
+		
+	}
+	.menu li {
+		color: #7a4343;
+		display: inline-block;
+		width: 120px;
+		height: 40px;
+		line-height: 40px;
+		margin-left: -5px;
+	}
+	.menu a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	.menu a:hover {
+		background: #F1F1F1;
+		color: #333;
+	}
+</head>
+<body>
+   <div class="menu">
+  <ul>
+    <li><a href="#">SELLER</a></li>
+    <li><a href="#">Đăng nhập</a></li>
+    <li><a href="#">Đăng ký</a>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
+    

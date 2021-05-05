@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+   .menu ul {
+		background: #1F568B;
+		list-style-type: none;
+		
+	}
+	.menu li {
+		color: #7a4343;
+		display: inline-block;
+		width: 120px;
+		height: 40px;
+		line-height: 40px;
+		margin-left: -5px;
+	}
+	.menu a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	.menu a:hover {
+		background: #F1F1F1;
+		color: #333;
+	}
+	.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+	.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+	.tab button:hover {
+		background-color: #ddd;
+	}
+	.tab button.active {
+		background-color: #ccc;
+	}
+	.tabcontent {
+		
+		
+	}
+	.dangnhap1 {
+		width:100%;
+		height:300px;
+		background: red;
+	}
+	.ochua1{
+		width:1000px;
+		height:300px;
+		margin:0 auto auto auto;
+	}
+	.ochua2{
+		width:1000px;
+		height:1000px;
+		margin:0 auto auto auto;
+		background:red;
+	}
+	.kieua
+    {	
+		
+		width: 200px ;
+		border-color:#9EC2EC; 
+		font-size:20px;
+		
+	}
+	.kieub
+    {	
+		height:40px;font-size:100%;width: 800px;
+		border-radius: 4px;border: 1px solid ;
+		border-color:#8cc4e9;
+		
+	}
+	#dangky{
+	width:1100px;
+	height:400px;
+	margin:0 auto auto auto;
+	}
+	.kieuaa
+	{
+		height:40px;font-size:100%;width: 293px;
+		border-radius: 4px;border: 1px solid ;
+		border-color:#8cc4e9;
+		
+	}
+	.button{
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	table{ margin:10px;}
+</style>
+</head>
+<body>
+<div class="menu">
+	<ul>
+		<li><a href="#">SELLER</a></li>
+		<li><a href="#">Đăng nhập</a></li>
+		<li><a href="#">Đăng ký</a>
+		</li>
+	</ul>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'dangnhap')">Đăng nhập</button>
+  <button class="tablinks" onclick="openCity(event, 'dangky')">Đăng ký</button>
+</div>
+<div id="dangnhap" class="tabcontent">
+	<table class=ochua1 >
+	 <tr>
+		<td class="kieua">Đường dẫn(*) </td> <td><input type = "text" placeholder="Nhập đường dẫn(bắt buộc)" class = "kieub" name = "duongdan" > </td>				
+	 </tr>
+	 <tr>
+		<td class="kieua">Tài khoản(*) </td> <td ><input type = "text" placeholder="Nhập tên tài khoản(bắt buộc" class = "kieub"name = "taikhoan"> </td>
+	 </tr>
+	 <tr>
+		<td class="kieua">Mật khẩu(*)</td> <td><input type="text"placeholder="Nhập mật khẩu bắt buộc" class="kieub" name = "matkhau"> </td>
+	 </tr>
+     <td ><button type="submit" class ="button">Đăng nhập</button></td>
+	</table>
+</div>
+<div id ="dangky" class="tabcontent" style ="display: none;">
+	
+	<table >
+        <tr>
+            <td class="kieua">Tên công ty/Đơn vị(*)</td> <td ><input type="text" placeholder="Nhập tên công ty/đơn vị(Bắt buộc)" class="kieub"> </td>
+        </tr>
+	</table>
+	<table> 
+		<tr>				
+            <td class="kieua">Mã số thuế</td> <td> <input type="text" placeholder="Nhập mã số thuế(Nếu có)" class="kieuaa"> </td>
+			<td class="kieua">Đường dẫn(*)</td> <td><input type="text" placeholder="Nhập đường dẫn(Bắt buộc)" class="kieuaa"> </td>
+        </tr>
+	</table>
+	<table> 
+        <tr>
+            <td class="kieua">Đia chỉ(*)</td> <td> <input type="text" placeholder="Nhập địa chỉ(Bắt buộc)" class="kieub"> </td>
+        </tr>
+	</table>
+	<table> 
+		<tr >				
+                <td class="kieua">Email công ty(*)</td> <td> <input type="text" placeholder="Nhập Email công ty(Bắt buộc)" class="kieuaa"> </td>
+				<td class="kieua">Email liên hệ(*)</td> <td><input type="text" placeholder="Nhập Email liên hệ (Bắt buộc)" class="kieuaa"> </td>
+        </tr>
+	</table>
+	<table>
+        <tr>
+                <td class="kieua">Tên ngân hàng(*)</td> <td> <input type="text" placeholder="Nhập tên ngân hàng(Bắt buộc)" class="kieub"> </td>
+        </tr>
+	</table>
+	<table> 
+		<tr >				
+                <td class="kieua">Số tài khoản ngân hàng(*)</td> <td> <input type="text" placeholder="Nhập số tài khoản ngân hàng(Bắt buộc)" class="kieuaa"> </td>
+				<td class="kieua">Số thẻ ATM(*)</td> <td><input type="text" placeholder="Nhập số thẻ ATM(Bắt buộc)" class="kieuaa"> </td>
+        </tr>
+	</table>
+	<table>
+            <tr>
+                 <td class="kieua">Số điện thoại(*)</td> <td> <input type="text" placeholder="Nhập số điện thoại(Bắt buộc)" class="kieuaa"> </td>
+				 <td class="kieua">Số Fax</td> <td><input type="text" placeholder="Nhập số Fax" class="kieuaa"> </td>
+            </tr>
+	</table>
+	<table> 
+			 			
+             <td class="kieua" >Định danh Công ty/đơn vị chủ quản</td> <td> <input type="text" placeholder="Nhập định danh Công ty/đơn vị chủ quản(Nếu có)" class="kieub"> </td>
+            
+	</table>
+	<td ><button type="submit" class="button">Đăng ký</button></td>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
+    
